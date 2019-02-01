@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.gtk.msfinance.Stock;
+import com.gtk.msfinance.util.Prt;
 
 public class CsvMgr {
 
@@ -94,6 +95,7 @@ public class CsvMgr {
             String line;
             while((line = br.readLine()) != null) {
                 String[] arr = line.split(",");
+                Prt.w(line);
                 while(arr[0].length() < 6)
                 {
                     arr[0] = "0" + arr[0];

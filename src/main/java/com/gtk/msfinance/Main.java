@@ -47,7 +47,7 @@ public class Main {
     private static void recFromAllStocks() {
         ArrayList<Stock> listStock;
 
-        final boolean isTestMode = true;
+        final boolean isTestMode = false;
         if(isTestMode) { // test data
             listStock = new ArrayList<Stock>();
             listStock.add(new Stock("썔바이오","049960"));
